@@ -1,5 +1,5 @@
 from .base_page import BasePage
-from pages.locators import DeleteProfileLocators
+from .locators import DeleteProfileLocators
 
 
 class DeleteProfilePage(BasePage):

@@ -1,6 +1,6 @@
 from .base_page import BasePage
 from .delete_profile_page import DeleteProfilePage
-from pages.locators import ProfilePageLocators
+from .locators import ProfilePageLocators
 
 
 class ProfilePage(BasePage):
@@ -9,4 +9,3 @@ class ProfilePage(BasePage):
         link.click()
         delete_profile_page = DeleteProfilePage(self.browser, self.browser.current_url)
         delete_profile_page.delete(password)
-
